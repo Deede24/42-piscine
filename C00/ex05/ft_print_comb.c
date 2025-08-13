@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h> //ILEGAL
 
 int	ft_iterate_array(char *(*array_pt), int index, char min, char max);
 int	ft_is_ascending(char *array);
@@ -75,3 +74,8 @@ int	ft_iterate_array(char *(*array_pt), int index, char min, char max)
 	}
 	return (0);
 }
+
+// void	main(void)
+// {
+// 	ft_print_comb();
+// }

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h> //ILEGAL
 
 void	ft_print_numbers(int nbr1, int nbr2);
 void	ft_putchar(char c);
@@ -55,3 +54,8 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+// void	main(void)
+// {
+// 	ft_print_comb2();
+// }

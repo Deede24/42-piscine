@@ -23,3 +23,8 @@ void	ft_print_numbers(void)
 		c++;
 	}
 }
+
+// void	main(void)
+// {
+// 	ft_print_reverse_alphabet();
+// }

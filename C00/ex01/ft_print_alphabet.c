@@ -23,3 +23,8 @@ void	ft_print_alphabet(void)
 		c++;
 	}
 }
+
+// void	main(void)
+// {
+// 	ft_print_alphabet();
+// }

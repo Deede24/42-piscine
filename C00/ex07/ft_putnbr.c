@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:10:58 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/12 17:14:47 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 14:46:23 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void		ft_putnbr(int nb);
 void		ft_putchar(char c);
-long int	ft_pow(int base, int exponent);
 
 void	ft_putnbr(int nb)
 {
@@ -49,17 +48,11 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-long int	ft_pow(int base, int exponent)
-{
-	int	n;
-	int	i;
-
-	n = 1;
-	i = 0;
-	while (i < exponent)
-	{
-		n *= base;
-		i++;
-	}
-	return (n);
-}
+// void	main(void)
+// {
+// 	ft_putnbr(0);
+// 	ft_putnbr(-42);
+// 	ft_putnbr(42);
+// 	ft_putnbr(-2147483648);
+// 	ft_putnbr(2147483647);
+// }
