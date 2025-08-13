@@ -1,0 +1,1 @@
+find . -name '*.sh' -printf '%f\n' | rev | cut -d. -f 2- | rev  
