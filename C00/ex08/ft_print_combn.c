@@ -15,6 +15,12 @@
 int	ft_iterate_array(char *(*array_pt), int index, char min, char max);
 int	ft_is_ascending(char *array);
 
+/*
+This function works, but it takes 12 seconds and moulinette will timeout it.
+This might be solved by inserting a check in line 45, to break the while loop
+when the last number to be printed is reached.
+*/
+
 void	ft_print_combn(int n)
 {
 	char	str[9];

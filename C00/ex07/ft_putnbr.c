@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:10:58 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 15:29:41 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 17:19:25 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void		ft_putnbr(int nb);
 void		ft_putchar(char c);
+
+/*
+Moulinette did KO this algorithm once. I am unsure why.
+It might be because there was an unused function ft_pow().
+*/
 
 void	ft_putnbr(int nb)
 {
