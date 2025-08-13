@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:33:22 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/12 15:32:37 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:21:32 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,16 @@ void	ft_swap(int *a, int *b)
 	*a = new_a;
 	*b = new_b;
 }
+
+// #include <stdio.h>
+//
+// int	main(void)
+// {
+// 	int array[] = {1, 2, 3, 4, 5};
+//
+// 	ft_rev_int_tab(array, 5);
+// 	for (int i; i < 5; i++)
+// 	{
+// 		printf("%i ", array[i]);
+// 	}
+// }

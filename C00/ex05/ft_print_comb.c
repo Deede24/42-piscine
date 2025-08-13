@@ -75,7 +75,7 @@ int	ft_iterate_array(char *(*array_pt), int index, char min, char max)
 	return (0);
 }
 
-// void	main(void)
+// int	main(void)
 // {
 // 	ft_print_comb();
 // }

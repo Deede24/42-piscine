@@ -6,11 +6,9 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 12:30:36 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/12 15:19:31 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:23:31 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,3 +21,11 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+
+// #include <stdio.h>
+//
+// int	main(void)
+// {
+// 	
+// 	printf("%i\n", ft_strlen("12345");
+// }

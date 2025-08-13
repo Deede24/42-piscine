@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 12:30:36 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/07 13:06:34 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:14:42 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,8 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
+
+// int	main(void)
+// {
+// 	ft_putstr("Hello World!");
+// }

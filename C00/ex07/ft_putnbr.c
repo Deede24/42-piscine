@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:10:58 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 15:04:09 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:29:41 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-// void	main(void)
+// int	main(void)
 // {
 // 	ft_putnbr(0);
 // 	ft_putnbr(-42);

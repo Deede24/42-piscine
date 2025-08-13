@@ -55,7 +55,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-// void	main(void)
+// int	main(void)
 // {
 // 	ft_print_comb2();
 // }

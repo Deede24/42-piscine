@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 12:15:45 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/07 12:19:58 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 15:16:11 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,3 +14,13 @@ void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+// #include <stdio.h>
+//
+// int	main(void)
+// {
+// 	int n;
+//
+// 	ft_ft(n);
+// 	printf("%i\n", n);
+// }
