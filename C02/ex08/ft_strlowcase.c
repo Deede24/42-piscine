@@ -1,40 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 19:16:43 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 16:12:15 by aburgsta         ###   ########.fr       */
+/*   Created: 2025/08/13 12:43:20 by aburgsta          #+#    #+#             */
+/*   Updated: 2025/08/13 15:42:25 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strlowcase(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if ((str[i] >= 'A' && str[i] <= 'Z'))
+			str[i] += 32;
 		i++;
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	return (str);
 }
 
 // #include <stdio.h>
 //
 // int	main()
 // {
-// 	int	dest[12];
-// 	int	*src;
-
-// 	src = "Hello World";
-// 	printf("got: %s\n", ft_strcapitalize(dest, src));
+// 	char test[] = "AbCdD";
+// 	printf("got: %s\n", ft_strlowcase(test));
 // }

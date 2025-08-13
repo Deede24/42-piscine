@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 19:16:43 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/12 19:23:41 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 16:13:07 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,15 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = src[i];
 	return (dest);
 }
+
+// #include <stdio.h>
+//
+// int	main()
+// {
+// 	int	dest[12];
+// 	int	*src;
+
+// 	src = "Hello World";
+//	ft_strcpy(dest, src);
+// 	printf("got: %s\n", dest);
+// }
