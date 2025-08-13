@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 19:16:43 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 16:12:15 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 18:06:53 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 // {
 // 	int	dest[12];
 // 	int	*src;
-
+//
 // 	src = "Hello World";
-// 	printf("got: %s\n", ft_strcapitalize(dest, src));
+// 	printf("got: %s\n", ft_strncpy(dest, src, 5));
 // }

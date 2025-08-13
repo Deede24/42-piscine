@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 19:16:43 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 18:06:55 by aburgsta         ###   ########.fr       */
+/*   Created: 2025/08/13 18:07:38 by aburgsta          #+#    #+#             */
+/*   Updated: 2025/08/13 18:19:16 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+#include <unistd.h>
+
+void	ft_putstr(char *str);
+
+void	ft_putstr_non_printable(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
+	while (*str != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		if ((*str >= 32 && *str <= 126))
+		write(1, str, 1);
+		str++;
 	}
-	dest[i] = src[i];
-	return (dest);
 }
-
-// #include <stdio.h>
-//
-// int	main()
-// {
-// 	int	dest[12];
-// 	int	*src;
-//
-// 	src = "Hello World";
-//	ft_strcpy(dest, src);
-// 	printf("got: %s\n", dest);
-// }

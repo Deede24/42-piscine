@@ -1,27 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 19:16:43 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 18:06:55 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 18:07:00 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_strlen(char *str);
+
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (i < size - 1 && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = src[i];
-	return (dest);
+	while (i < size)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (ft_strlen(src));
+}
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 // #include <stdio.h>
@@ -32,6 +50,5 @@ char	*ft_strcpy(char *dest, char *src)
 // 	int	*src;
 //
 // 	src = "Hello World";
-//	ft_strcpy(dest, src);
-// 	printf("got: %s\n", dest);
+// 	printf("got: %s\n", ft_strlcpy(dest, src, 5));
 // }

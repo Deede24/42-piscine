@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 12:43:20 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 12:53:57 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 18:19:12 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_str_is_printable(char *str)
 {
 	while (*str != '\0')
 	{
-		if (!(*str >= 33 && *str <= 126))
+		if (!(*str >= 32 && *str <= 126))
 			return (0);
 		str++;
 	}

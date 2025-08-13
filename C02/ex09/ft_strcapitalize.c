@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 12:43:20 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 16:03:49 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 19:00:07 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,9 @@ char	*ft_strlowcase(char *str)
 }
 
 // #include <stdio.h>
-//
+
 // int	main()
 // {
-// 	char test[] = "hi, how are you? 42words forty-two; fifty+and+one";
+// 	char test[] = "hi, how are you? 42Words forty-two; fifty+and+one";
 // 	printf("got: %s\n", ft_strcapitalize(test));
 // }
