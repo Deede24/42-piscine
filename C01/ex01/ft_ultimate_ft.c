@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 12:15:45 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 18:58:29 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 18:59:17 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ void	ft_ultimate_ft(int *********nbr)
 	*********nbr = 42;
 }
 
-// #include <stdio.h>
+// #include <stdio.h>     DOESNT WORK
 //
 // int	main(void)
 // {
