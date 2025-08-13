@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:10:58 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 17:19:25 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/13 17:48:07 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,14 @@ void	ft_putchar(char c)
 
 // int	main(void)
 // {
-// 	ft_putnbr(0);
-// 	ft_putnbr(-42);
-// 	ft_putnbr(42);
-// 	ft_putnbr(-2147483648);
-// 	ft_putnbr(2147483647);
+	// for (int i = -2147483648; i < 2147483647; i++)
+	// {
+	// 	ft_putnbr(i);
+	// 	ft_putchar('\n');
+	// }
+	// ft_putnbr(0);
+	// ft_putnbr(-42);
+	// ft_putnbr(42);
+	// ft_putnbr(-2147483648);
+	// ft_putnbr(2147483647);
 // }
