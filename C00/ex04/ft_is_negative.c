@@ -25,7 +25,6 @@ void	ft_is_negative(int n)
 		ft_putchar('P');
 }
 
-
 // void	main(void)
 // {
 // 	ft_is_negative(-1);
