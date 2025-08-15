@@ -29,7 +29,7 @@ void	ft_print_combn(int n)
 
 	i = 0;
 	while (i++ < n)
-		str[i] = '0' + i - 1;
+		str[i - 1] = '0' + i - 1;
 	str[n] = '\0';
 	array = &str[0];
 	i = 0;
