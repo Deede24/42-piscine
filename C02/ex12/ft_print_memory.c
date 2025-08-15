@@ -6,11 +6,12 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 10:43:08 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/15 11:04:56 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/15 11:58:13 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 #define BASE 16
 
 void	ft_putstr_non_printable(char *str);
@@ -19,7 +20,22 @@ void	ft_puthexn(long working_nb, int digits);
 
 void	*ft_print_memory(void *addr, unsigned int size)
 {
-	ft_puthexn((long) addr, size);
+	unsigned int	char_cnt;
+	int				col;
+
+	printf("%i", sizeof(addr));
+	char_cnt = 0;
+	while (char_cnt < size)
+	{
+		ft_puthexn((long) addr, 16);
+		write(1, ": ", 2);
+		col = 0;
+		while (col < 16)
+		{
+			break ;
+		}
+		break ;
+	}
 	return (addr);
 }
 
@@ -37,9 +53,9 @@ void	ft_putstr_non_printable(char *str)
 
 void	ft_puthexn(long working_nb, int digits)
 {
-	long	index;
-	int		i;
-	char	current_digit;
+	unsigned long long int	index;
+	int					i;
+	char				current_digit;
 
 	if (working_nb < 0)
 	{
