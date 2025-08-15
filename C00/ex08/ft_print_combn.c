@@ -28,11 +28,8 @@ void	ft_print_combn(int n)
 	int		i;
 
 	i = 0;
-	while (i < n)
-	{
-		str[i] = '0' + i;
-		i++;
-	}
+	while (i++ < n)
+		str[i] = '0' + i - 1;
 	str[n] = '\0';
 	array = &str[0];
 	i = 0;
@@ -83,13 +80,13 @@ void	ft_iterate_array(char *(*array_pt), int index, char min, char max)
 	}
 }
 
-int	main(void)
-{
-	ft_print_combn(2);
-	write(1 , "\n", 1);
-	ft_print_combn(3);
-	write(1 , "\n", 1);
-	ft_print_combn(5);
-	write(1 , "\n", 1);
-	ft_print_combn(9);
-}
+// int	main(void)
+// {
+// 	ft_print_combn(2);
+// 	write(1 , "\n", 1);
+// 	ft_print_combn(3);
+// 	write(1 , "\n", 1);
+// 	ft_print_combn(5);
+// 	write(1 , "\n", 1);
+// 	ft_print_combn(9);
+// }
