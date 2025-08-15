@@ -12,8 +12,8 @@
 
 #include <unistd.h>
 
-int	ft_iterate_array(char *(*array_pt), int index, char min, char max);
-int	ft_is_ascending(char *array);
+void	ft_iterate_array(char *(*array_pt), int index, char min, char max);
+int		ft_is_ascending(char *array);
 
 /*
 This function works, but it takes 12 seconds and moulinette will timeout it.
@@ -39,11 +39,13 @@ void	ft_print_combn(int n)
 	write(1, array, n);
 	while (i > -1)
 	{
-		i *= ft_iterate_array(&array, n - 1, '0', '9');
+		ft_iterate_array(&array, n - 1, '0', '9');
 		if (ft_is_ascending(array) == 0)
 		{
 			write(1, ", ", 2);
 			write(1, array, n);
+			if (array[0] == ('9' - (n - 1)))
+				break ;
 		}
 		i++;
 	}
@@ -65,7 +67,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int	ft_iterate_array(char *(*array_pt), int index, char min, char max)
+void	ft_iterate_array(char *(*array_pt), int index, char min, char max)
 {
 	if ((*array_pt)[index] >= max)
 	{
@@ -74,20 +76,20 @@ int	ft_iterate_array(char *(*array_pt), int index, char min, char max)
 			(*array_pt)[index] = min;
 			ft_iterate_array(array_pt, index - 1, min, max);
 		}
-		else
-			return (-1);
 	}
 	else
 	{
 		(*array_pt)[index] = (*array_pt)[index] + 1;
 	}
-	return (1);
 }
 
-// int	main(void)
-// {
-// 	ft_print_comb(2);
-// 	ft_print_comb(3);
-// 	ft_print_comb(5);
-// 	ft_print_comb(9);
-// }
+int	main(void)
+{
+	ft_print_combn(2);
+	write(1 , "\n", 1);
+	ft_print_combn(3);
+	write(1 , "\n", 1);
+	ft_print_combn(5);
+	write(1 , "\n", 1);
+	ft_print_combn(9);
+}
