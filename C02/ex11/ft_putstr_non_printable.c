@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 18:07:38 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 18:19:16 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/15 10:20:07 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putstr_non_printable(char *str)
 {
 	while (*str != '\0')
 	{
-		if ((*str >= 32 && *str <= 126))
+		if ((*str >= ' ' && *str <= '~'))
 			write(1, str, 1);
 		else
 		{
@@ -41,11 +41,7 @@ void	ft_puthex(int working_nb)
 		working_nb *= -1;
 		ft_putchar('-');
 	}
-	else if (working_nb == 0)
-		ft_putchar('0');
 	index = BASE * BASE;
-	if ((working_nb % index == 0) && !(working_nb == 0))
-		ft_putchar('1');
 	while (index > 1)
 	{
 		current_digit = ((working_nb % index) / (index / BASE));
@@ -64,10 +60,10 @@ void	ft_putchar(char c)
 
 // int	main(void)
 // {
-// 	// ft_putstr_non_printable("Hello\nHow are you?");
+// 	ft_putstr_non_printable("Hello\nHow are you?");
 // 	// for (int i = 0; i < 188; i++)
 // 	// {
-// 	// 	ft_puthex('\n');
+// 	// 	ft_puthex(i);
 // 	// 	ft_putchar('\n');
 // 	// }
 // }

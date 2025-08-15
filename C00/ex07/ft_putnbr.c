@@ -6,7 +6,7 @@
 /*   By: aburgsta <aburgsta@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 13:10:58 by aburgsta          #+#    #+#             */
-/*   Updated: 2025/08/13 17:48:07 by aburgsta         ###   ########.fr       */
+/*   Updated: 2025/08/15 10:12:52 by aburgsta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,8 @@ void	ft_putnbr(int nb)
 		return ;
 	}
 	index = 1;
-	while (working_nb > index)
+	while (working_nb >= index)
 		index *= BASE;
-	if ((working_nb % index == 0))
-		ft_putchar('1');
 	while (index > 1)
 	{
 		ft_putdigit((working_nb % index) / (index / BASE));
@@ -60,11 +58,11 @@ void	ft_putdigit(int digit)
 
 // int	main(void)
 // {
-// 	// for (int i = -2147483648; i < 2147483647; i++)
-// 	// {
-// 	// 	ft_putnbr(i);
-// 	// 	ft_putchar('\n');
-// 	// }
+// 	for (int i = 0; i < 101; i++)
+// 	{
+// 		ft_putnbr(i);
+// 		ft_putchar('\n');
+// 	}
 // 	ft_putnbr(0);
 // 	ft_putnbr(-42);
 // 	ft_putnbr(42);
